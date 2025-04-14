@@ -8,7 +8,8 @@ This project implements a house price prediction system using a custom Linear Re
   The `clean.py` script processes the raw dataset (`data.csv`) by selecting relevant features, removing missing values and duplicates, and saving the result as `data_cleaned.csv`.
 
 - **Model Training:**  
-  The `LinearRegression.cpp` file contains the C++ implementation of the Linear Regression algorithm. It reads the cleaned dataset, applies a standard scalar (centering each feature and target variable by subtracting the mean and scaling by the standard deviation), trains the model, and evaluates predictions.
+  The `LinearRegression.cpp` file contains the C++ implementation of the Linear Regression algorithm. It reads the cleaned dataset, applies a standard scalar (centering each feature and target variable by subtracting the mean and scaling by the standard deviation), trains the model, and evaluates predictions.  
+  Additionally, it provides a custom train_test_split function to split the dataset into training and testing sets.
 
 ## Project Structure
 
