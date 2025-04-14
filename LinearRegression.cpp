@@ -28,6 +28,8 @@ pair<vector<vector<double>>,vector<double>> readData(const string& filename) {
 
     int m = X.size();
     int n = X[0].size();
+
+    // Apply standard scalar to features: subtract mean and divide by standard deviation for each feature.
     for(int i = 0; i < n; i++){
         double mean = 0.0;
         for(int j = 0; j < m; j++) mean += X[j][i];
@@ -43,6 +45,8 @@ pair<vector<vector<double>>,vector<double>> readData(const string& filename) {
 
         for(int j = 0; j < m; j++) X[j][i] /= stddev;  
     }
+
+    // Apply standard scalar to target variable y.
     double mean = 0.0;
     for(int j = 0; j < m; j++) mean += y[j];
     
