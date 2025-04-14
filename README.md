@@ -61,4 +61,4 @@ Then execute the model with:
 - For any issues during compilation or execution, verify that all dependencies are properly installed.
 
 ## License
-This project is licensed under the [Apache License 2.0](LICENSE).
+This project is licensed under the Apache License. See the [LICENSE](LICENSE) file for details.
