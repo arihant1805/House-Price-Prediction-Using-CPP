@@ -1,4 +1,4 @@
-# House Price Prediction
+# House Price Prediction Using C++
 
 This project implements a house price prediction system using a custom Linear Regression model in C++ and a data cleaning pipeline in Python.
 
@@ -48,11 +48,11 @@ This generates `data_cleaned.csv` which is required by the C++ model.
 
 Compile the C++ source code using:
 ```bash
-g++ -o LinearRegression LinearRegression.cpp -O2
+ g++ HousePricePrediction.cpp DataPreprocessing.cpp LinearRegression.cpp -o ./out
 ```
 Then execute the model with:
 ```bash
-./LinearRegression
+./out
 ```
 
 ## Notes
